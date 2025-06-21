@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [build-system]
 requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -9,4 +10,17 @@ description = "Sistema de gestão de aluguer de veículos"
 authors = [{name = "Diogo-Nandes", email = "diogonandes731@@email.com"}]
 readme = "README.md"
 license = {text = "MIT"}
+=======
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gestao_aluguer_veiculos"
+version = "1.1.0"
+description = "Sistema de gestão de aluguer de veículos"
+authors = [{name = "Diogo-Nandes", email = "diogonandes731@@email.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+>>>>>>> 8396a61 (Primeiro commit)
 requires-python = ">=3.7"
