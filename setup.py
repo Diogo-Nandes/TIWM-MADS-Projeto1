@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="gestao_aluguer_veiculos",
-    version="1.1.2",
+    version="1.1.3",
     description="Gestão de aluguer de automóveis",
     author="Diogo Fernandes, João Braga, Gonçalo Condesso, Victor Ramos",
     packages=find_packages(),
