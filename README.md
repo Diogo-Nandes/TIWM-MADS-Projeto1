@@ -23,7 +23,7 @@ gestor_clientes = GestorClientes()
 gestor_alugueres = GestorAlugueres()
 ```
 
-Dados para teste:
+Dados para teste dos veículos:
 ```
 # Adição de veículos diferentes sem dar erros
 gestor_veiculos.adicionar_veiculo("AA-00-BB", "Ford", "Focus", "2019", "Diesel", 40000, 25.5) # Matricula, Marca, Modelo, Ano, Combustível, Quilómetros, Preço/Dia
@@ -49,6 +49,8 @@ gestor_veiculos.atualizar_veiculo("CC-00-BB", nova_matricula="ZZ-11-CC", marca="
 # Atualização do veículo para provocar o erro de ano inválido
 gestor_veiculos.atualizar_veiculo("ZZ-11-CC", nova_matricula="ZZ-11-CC", marca="Seat", modelo="Ibiza", data="2030", combustivel="Diesel", quilometros=75000, preco_dia=25.5)
 ```
+
+Listagens dos veículos:
 ```
 # Listar todos os veículos
 gestor_veiculos.listar_veiculos()
@@ -65,6 +67,8 @@ gestor_veiculos.manutencao_preventiva(100000)
 # Listar veículos disponíveis num determinado período
 gestor_alugueres.veiculos_disponiveis("13-05-2025", "15-05-2025", gestor_veiculos)
 ```
+
+Dados para teste dos clientes:
 ```
 # Adição de clientes diferentes sem dar erros
 gestor_clientes.adicionar_cliente("111222333", "Ana Costa", "10-03-1990") # NIF, Nome, Data Nascimento
@@ -86,10 +90,14 @@ gestor_clientes.atualizar_cliente("131222333", novo_nif="982654321", nome="João
 # Atualização dos dados do cliente para provocar o erro de novo NIF repetido
 gestor_clientes.atualizar_cliente("555555666", novo_nif="444555666", nome="João Pedro", data_nascimento="20-06-1991")
 ```
+
+Listagem dos clientes:
 ```
 # Listar todos os clientes
 gestor_clientes.listar_clientes()
 ```
+
+Dados para teste dos alugueres:
 ```
 # Criar alugueres
 gestor_alugueres.adicionar_aluguer("987654321", "XY-98-ZT", "01-05-2025", "10-05-2025", gestor_veiculos, gestor_clientes) # NIF Cliente, Matrícula Veículo, Data Início, Data Fim
@@ -105,10 +113,18 @@ gestor_alugueres.adicionar_aluguer("111222333", "XY-98-ZT", "01-05-2025", "10-05
 # Erro matrícula inexistente
 gestor_alugueres.adicionar_aluguer("987654321", "AA-00-BB", "01-05-2025", "10-05-2025", gestor_veiculos, gestor_clientes)
 ```
+
+Listagens dos alugueres:
+```
+# Listar todos os alugueres
+gestor_alugueres.listar_alugueres()
+```
 ```
 # Lista dos 5 veículos mais alugados
 gestor_alugueres.veiculos_mais_alugados()
 ```
+
+Listagens dos relatórios de faturação:
 ```
 # Exibir Relatórios
 gestor_alugueres.relatorio_faturacao('semana')  # Por semana
