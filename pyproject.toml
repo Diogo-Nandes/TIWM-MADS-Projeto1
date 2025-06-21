@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "gestao_aluguer_veiculos"
 version = "1.1.1"
 description = "Sistema de gestão de aluguer de veículos"
-authors = [{name = "Diogo-Nandes", email = "diogonandes731@@email.com"}]
+authors = [{name = "Diogo-Nandes", email = "diogonandes731@email.com"}]
 readme = "README.md"
 license = {text = "MIT"}
 requires-python = ">=3.7"
