@@ -1,1 +1,1 @@
-from .gestao_aluguer import GestaoAluguerAutomoveis, GestorVeiculos, GestorClientes
+from .gestao_aluguer import GestorVeiculos, GestorClientes, GestorAlugueres
